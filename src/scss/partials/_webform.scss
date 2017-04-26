@@ -1,0 +1,131 @@
+/* ================================
+Visual Preference Webform
+================================= */
+
+/* ----------------
+Form Side
+------------------*/
+.websurvey3-visual-pref{
+
+	// hide icon
+	 .field-name-field-participate-icon{
+		display:none;
+	}
+	
+	// checkbox wrapper
+	.form-checkboxes{
+
+		@include bp(xs){
+			@include flex(space-between,flex-start);
+			flex-wrap:wrap;
+		}		
+
+		// flex item wrappers
+		> .form-item{
+			display:block;
+			width:100%;
+			
+			@include bp(xs){
+				width:calc(50% - .5rem);
+			}
+
+			// label
+			.option{
+				display:block;
+				text-align:center;
+				font-weight:700;
+				margin-bottom:10pxi;
+				position:relative;
+
+				@include bp(md){
+					cursor:pointer;
+				}
+				
+				// img general non-specific styling
+				&::before{
+					background-color:transparent;
+					background-position:50%;
+					background-repeat:no-repeat;
+					background-size:cover;
+					box-shadow:0 10pxi 15px -4px rgba(black,.22);
+					content:"";
+					display:block;
+					height:150px;
+					margin-bottom:10pxi;
+					width:100%;
+					border-radius:1px;
+				}
+				&::after{
+					@include absolute(0,0);
+					@include flex(center,center);
+					background:rgba($color-1,.625) url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTNweCIgaGVpZ2h0PSIxMnB4IiB2aWV3Qm94PSIwIDAgMTMgMTIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjAwMDAwMCwgLTIuMDAwMDAwKSIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNC41LDIuMjQwMzg0ODcgQzE0Ljc3MDgzNDcsMi40NDg3MTkyNSAxNC45Mzc0OTk3LDIuNzI0NzU4MTUgMTUsMy4wNjg1MDk4NyBDMTUuMDYyNTAwMywzLjQxMjI2MTU5IDE0Ljk4OTU4NDQsMy43Mjk5NjY3NSAxNC43ODEyNSw0LjAyMTYzNDg3IEw4LjMxMjUsMTMuNDU5MTM0OSBDOC4xMDQxNjU2MywxMy43Mjk5Njk2IDcuODM4NTQzMjgsMTMuODk2NjM0NiA3LjUxNTYyNSwxMy45NTkxMzQ5IEM3LjE5MjcwNjcyLDE0LjAyMTYzNTIgNi44OTU4MzQ2OSwxMy45NDg3MTkyIDYuNjI1LDEzLjc0MDM4NDkgQzYuNDU4MzMyNSwxMy42MTUzODQyIDYuMDIwODM2ODcsMTMuMTcyNjgwMyA1LjMxMjUsMTIuNDEyMjU5OSBDNC42MDQxNjMxMiwxMS42NTE4Mzk0IDMuOTM3NTAzMTIsMTAuOTE3NDcxNyAzLjMxMjUsMTAuMjA5MTM0OSBMMi4zNDM3NSw5LjE0NjYzNDg3IEMyLjExNDU4MjE5LDguODk2NjMzNjIgMiw4LjU5NDU1MzMxIDIsOC4yNDAzODQ4NyBDMiw3Ljg4NjIxNjQzIDIuMTI0OTk4NzUsNy41ODQxMzYxMiAyLjM3NSw3LjMzNDEzNDg3IEMyLjYyNTAwMTI1LDcuMDg0MTMzNjIgMi45MTY2NjUsNi45NjQzNDMxNSAzLjI1LDYuOTc0NzU5ODcgQzMuNTgzMzM1LDYuOTg1MTc2NTkgMy44NjQ1ODIxOSw3LjEyNTgwMDE4IDQuMDkzNzUsNy4zOTY2MzQ4NyBMNy4xODc1LDEwLjc0MDM4NDkgTDEyLjgxMjUsMi41MjE2MzQ4NyBDMTMuMDIwODM0NCwyLjI1MDgwMDE4IDEzLjI4NjQ1NjcsMi4wODQxMzUxOCAxMy42MDkzNzUsMi4wMjE2MzQ4NyBDMTMuOTMyMjkzMywxLjk1OTEzNDU2IDE0LjIyOTE2NTMsMi4wMzIwNTA1IDE0LjUsMi4yNDAzODQ4NyBaIiBpZD0iaW9uLWNoZWNrbWFyay1yb3VuZC0tLUlvbmljb25zIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=') no-repeat 50%;;
+					background-size:25% 25%;
+					color:white;
+					content:"";
+					height:150px;
+					opacity:0;
+					width:100%;
+					transition:opacity .2s ease;
+				}
+			}
+		}
+	}
+
+	// style checked imgs
+	input.form-checkbox:checked{
+		~ .option{
+			color:$color-1;
+			&::before{
+				box-shadow:none;
+			}
+			&::after{
+				opacity:1;
+			}
+		}
+	}
+
+
+
+	
+	// mixin for individual page background images
+	@mixin bg-img($option,$url){
+		&[class*="#{$option}"]{
+			.option::before{
+				background-image:url('#{$url}');
+			}
+		}
+	}
+	
+	// subarea 1
+	.webform-client-form-65{
+		.form-item{
+			@include bg-img(option1,"http://unsplash.it/300/300?image=409");
+			@include bg-img(option2,"http://unsplash.it/300/300?image=410");
+			@include bg-img(option3,"http://unsplash.it/300/300?image=411");
+			@include bg-img(option4,"http://unsplash.it/300/300?image=412");
+			@include bg-img(option5,"http://unsplash.it/300/300?image=413");
+		}
+	}
+
+
+	// accessibly hide radio inputs
+	input.form-checkbox{
+		@include hide;
+
+		// remove topcoat checkboxes
+		~ .topcoat-checkbox__checkmark{
+			display:none;
+		} 
+	}
+
+	// submit
+	.form-actions{
+		text-align:right;
+	} 
+
+	// social
+	.share-links{
+		display:none;
+	}
+}
+

@@ -1,0 +1,7 @@
+// hide original h1
+.page-node-64,
+.page-node-66{
+	.region-inner > h1.title{
+		display:none;
+	}
+}

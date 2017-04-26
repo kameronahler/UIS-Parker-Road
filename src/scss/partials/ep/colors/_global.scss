@@ -1,36 +1,33 @@
-/* --------------------------------
-vars explained
-----------------------------------*/
 // main nav text color, homepage timeline header and footer background color, individual page h1s, banner background colors, participate card header background colors
-$color-primary: #2b76af;
+$color-ep-primary: #095a84;
 
 // button colors – intended for white text
-$color-secondary: #53822f;
+$color-ep-secondary: #53822f;
 
 // block title colors for homepage and sidebars – need to be darker because they are on a gray background
-$color-home-block-h2: darken($color-primary,5%);
+$color-ep-home-block-h2: darken($color-ep-primary,5%);
 
 // homepage and events page timeline icon color
-$color-timeline-icon-bg: #485052;
+$color-ep-timeline-icon-bg: #485052;
 
 // event page
-$color-events-time:darken($color-primary,10%);
+$color-ep-events-time:darken($color-ep-primary,10%);
 
 // postscript area More links
-$color-postscript-link:#a2ccde;
+$color-ep-postscript-link:#a2ccde;
 
 // footer area links
-$color-footer-link:#e6f1f6;
+$color-ep-footer-link:#e6f1f6;
 
 // footer area text (non-links)
-$color-footer-body:#f0f0f0; // non-links in footer - bg #686e70
+$color-ep-footer-body:#f0f0f0; // non-links in footer - bg #686e70
 
 
 /* --------------------------------
 top nav
 ----------------------------------*/
 #block-system-main-menu ul li a {
-    color: $color-primary;
+    color: $color-ep-primary;
 }
 
 @media all and (min-width:740px) and (min-device-width:740px),
@@ -42,7 +39,7 @@ top nav
         }
     }
     .region-header-second-inner #block-system-main-menu ul li ul a.active:hover {
-        color: $color-primary;
+        color: $color-ep-primary;
     }
 }
 
@@ -53,10 +50,10 @@ headings
 h1,
 h1.site-name,
 h2.site-name{
-    color: $color-primary;
+    color: $color-ep-primary;
 }
 h2.block-title {
-    color: $color-home-block-h2;
+    color: $color-ep-home-block-h2;
 }
 
 
@@ -68,7 +65,7 @@ a,
 .view-id-events h2 a,
 h2.site-name a,
 .view-faq .attachment ul li a.active {
-    color: $color-primary;
+    color: $color-ep-primary;
 }
 
 
@@ -85,11 +82,11 @@ html .field-name-field-document:not(#edit-field-document),
 .view-documents .views-field-view-node a,
 .view-documents.view-display-id-page span.field-content.button a,
 .view-documents.view-display-id-page span.file a{
-    background-color: $color-secondary;
+    background-color: $color-ep-secondary;
     font-weight: normal;
     transition: background-color .3s ease-out;
     &:hover {
-        background-color: darken($color-secondary, 5%);
+        background-color: darken($color-ep-secondary, 5%);
     }
 }
 
@@ -101,17 +98,17 @@ homepage timeline
 .mason-timeline .jcarousel-header,
 .mason-timeline .jcarousel-footer,
 .slider-outter {
-    background-color: $color-primary;
+    background-color: $color-ep-primary;
 }
 
 // darker colored icon circle
 .event-phase .eventcon {
-    background-color: $color-timeline-icon-bg;
+    background-color: $color-ep-timeline-icon-bg;
 }
 
 // lighter colored icon circle
 .event-event .eventcon {
-    background-color: lighten($color-timeline-icon-bg, 10%);
+    background-color: lighten($color-ep-timeline-icon-bg, 10%);
 }
 
 /* --------------------------------
@@ -119,10 +116,10 @@ documents
 ----------------------------------*/
 // apply button
 form#views-exposed-form-documents-page .views-exposed-widgets input#edit-submit-documents{
-    background:$color-secondary;
+    background:$color-ep-secondary;
     transition: background-color .3s ease-out;
         &:hover {
-        background-color: darken($color-secondary, 5%);
+        background-color: darken($color-ep-secondary, 5%);
     }
 }
 
@@ -135,7 +132,7 @@ events
 #zone-content .view-events .views-field-field-start-date,
 #zone-content .node-event .field-name-field-start-date,
 .node-type-book .dd-quote p {
-    color: $color-events-time;
+    color: $color-ep-events-time;
 }
 
 
@@ -151,25 +148,25 @@ participate
 .view-participate h2.node-title,
 .view-participate .views-field-field-participate-icon,
 .node-type-document .document-feedback-block h2.block-title {
-    background-color: $color-primary;
+    background-color: $color-ep-primary;
 }
 
 // question
 .view-participate .views-field-body .field-content {
-    color: $color-home-block-h2;
+    color: $color-ep-home-block-h2;
 }
 
 // buttons
 .share-links .comment-add > a{
     font-weight:400;
-    background-color:$color-secondary;
+    background-color:$color-ep-secondary;
 }
 
 .view-participate .views-field-view-node a,
 article.comment .links-rate .comment-reply a,
 article.comment .links-rate .comment-delete a,
 article.comment .links-rate .comment-edit a {
-    background-color: $color-secondary
+    background-color: $color-ep-secondary
 }
 
 article.comment .rate-widget ul li .percent{
@@ -178,12 +175,12 @@ article.comment .rate-widget ul li .percent{
 
 //important :((((((((((
 article.comment .rate-widget ul li{
-    background-color: $color-primary !important;
+    background-color: $color-ep-primary !important;
 }
 
 // timestamp
 article.comment .submitted-links-rate .date{
-    color:$color-events-time;
+    color:$color-ep-events-time;
 }
 
 /* --------------------------------
@@ -192,7 +189,7 @@ postscript
 
 #zone-postscript {
     a {
-        color: $color-postscript-link;
+        color: $color-ep-postscript-link;
     }
     // reset google translate
     .goog-te-menu-value {
@@ -200,7 +197,7 @@ postscript
     }
     // headings
     .block h2.block-title {
-        color: #fff;
+        color: #fff !important;
     }
 }
 
@@ -209,12 +206,12 @@ project updates
 ----------------------------------*/
 // button
 .region-content .view-news .views-field-view-node a{
-    background-color:$color-secondary;
+    background-color:$color-ep-secondary;
 }
 
 .region-content .view-news .views-field-title a,
 .page-news .region-content h1.title{
-    color:$color-primary
+    color:$color-ep-primary
 }
 
 /* --------------------------------
@@ -223,10 +220,10 @@ footer
 
 #zone-footer {
     // footer non-links
-    color: $color-footer-body;
+    color: $color-ep-footer-body;
     // footer links
     a {
-        color: $color-footer-link;
+        color: $color-ep-footer-link;
     }
 }
 
@@ -237,7 +234,7 @@ footer
 }
 
 #block-menu-menu-footer-menu ul li a {
-    color: $color-footer-link;
+    color: $color-ep-footer-link;
 }
 
 

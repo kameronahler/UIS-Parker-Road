@@ -281,6 +281,6 @@ $body-lineheight:1.45;
 
 .region-content .region-inner {
     @include bp-max-s {
-        padding: 0;
+        // padding: 0;
     }
 }
