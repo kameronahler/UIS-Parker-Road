@@ -1,0 +1,247 @@
+#edit-submitted-which-corridors{
+    display: block;
+}
+
+.webform-component--intro{
+	margin-bottom: 3rem;
+}
+
+.instructions{
+    margin-top: 1.5em;
+}
+
+html.no-touch .instructions-touch{
+    display: none;
+}
+
+html.touch .instructions-desktop{
+    display: none;
+}
+
+.image-wrapper{
+    position:relative;
+    height:137px;
+    margin-bottom: 1.25rem; 
+}
+
+.image-wrapper img{
+    position:absolute;
+    top:0;
+    left:50%;
+    width:auto;
+    height:137px;
+    -webkit-transform:translateX(-50%);
+        -ms-transform:translateX(-50%);
+            transform:translateX(-50%);
+    object-fit:cover;
+}
+
+.image-wrapper.js-cycle img{
+    -webkit-animation-name: cycle;
+            animation-name: cycle;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration:6s;
+            animation-duration:6s;
+}
+
+.image-wrapper.js-cycle img:nth-child(2){
+    -webkit-animation-delay:-4s;
+            animation-delay:-4s;
+}
+
+.image-wrapper.js-cycle img:nth-child(3){
+    -webkit-animation-delay:-2s;
+            animation-delay:-2s;
+}
+
+@-webkit-keyframes cycle{
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes cycle{
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.webform-component--preferred-characteristics{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.webform-component--intro h2,
+#webform-client-form-24 > div > .form-item > label,
+.webform-component--images h2{
+    font-size: 1.25rem;
+    font-family: inherit !important;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.webform-component--which-corridors > label{
+    display: none;
+}
+
+.webform-component-fieldset h3,
+.webform-component--images h3{
+    font-family: inherit;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom:.125rem;
+    color:inherit;
+    font-size: 1rem;
+}
+
+.webform-component-fieldset img{
+	width: 100%;
+	height: auto !important;
+}
+
+#webform-client-form-24 .description{
+	font-size: .875rem;
+	color: #015581;
+	font-style: italic;
+	text-align: center;
+}
+
+.webform-component-email,
+.webform-component--general-comments{
+	margin-top: 2rem;
+}
+
+#webform-client-form-24 > div > .form-item.webform-component-email > label{
+	text-align: center;
+}
+
+#webform-client-form-24 > div > .form-item.webform-component-email > input,
+#webform-client-form-24 .webform-component--general-comments textarea{
+	margin: .5rem auto;
+	display: block;
+	background: #eee;
+	height: 2rem;
+	padding: .5rem;
+}
+
+.webform-component--updates-signup{
+	width: 100%;
+	max-width: 275px;
+	margin: 0 auto;
+}
+
+#webform-client-form-24 > div > .form-item.webform-component-textarea > label{
+	text-align: center;
+}
+
+#webform-client-form-24 .webform-component--general-comments .form-textarea-wrapper{
+	width: 100%;
+	max-width: 405px;
+	margin: 0 auto;
+}
+
+
+.form-actions{
+    text-align: center;
+}
+
+.form-actions .webform-submit{
+    padding: .75rem 2rem;
+    font-size: 1.25rem;
+    margin: 2rem auto 1rem;
+}
+
+.share-links{
+    margin: 0 auto;
+}
+
+.page-node-done.page-node-24 #page-title{
+	display: none;
+}
+
+.webform-confirmation h2{
+	font-family: inherit;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+.webform-confirmation .button-holder{
+	text-align: center;
+}
+
+.webform-confirmation .button{
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.webform-confirmation ~ .links{
+	display: none;
+}
+
+@media (min-width:46.25em){
+    .image-wrapper{
+        width: 668px;
+        height: 191px;
+    }
+    .image-wrapper img{
+        width: 668px;
+        height:191px;
+    }
+    .webform-component--intro h2,
+    #webform-client-form-24 > div > .form-item > label,
+    .webform-component--images h2{
+        text-align: left;
+    }
+    #edit-submitted-preferred-characteristics div[class*="form-item-submitted-preferred-characteristics-"]{
+        display: inline-block;
+        width: 50%;
+        margin-left:-4px;
+        margin-right:-4px;
+    }
+}
+
+@media (min-width:61.25em){
+    .instructions{
+        text-align: left;
+    }
+    .image-wrapper{
+        width: 908px;
+        height: 260px;
+    }
+    .image-wrapper img{
+        width: 908px;
+        height:auto;
+    }
+    #edit-submitted-preferred-characteristics div[class*="form-item-submitted-preferred-characteristics-"]{
+        width: 33.334%;
+    }
+    .webform-component-fieldset{
+    	margin-bottom: 1.5rem;
+    }
+    .webform-component-fieldset h3{
+    	text-align: left;
+    }
+    .fieldset-wrapper .webform-component-markup{
+    	width: 66.667%;
+    	display: inline-block;
+    	margin-left: calc(2rem - 4px);
+    	margin-right: -4px;
+    }
+    .fieldset-wrapper .webform-component-checkboxes{
+    	width: calc(33.334% - 4rem);
+    	display: inline-block;
+    	vertical-align: top;
+    	margin-left: 2rem;
+    	margin-top: 2.5rem;
+    }
+}
